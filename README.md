@@ -39,7 +39,7 @@ A Build trigger automatically starts a build whenever you make any changes to yo
 
 You can avoid unnecessary builds when functional components of your repository were not modified. Use conditional workflow triggering to skip building the workflow if the watched files were not updated since the last successful build.
 
-You should specify the files to watch in changeset by using the includes and excludes keys. Both keys includes and excludes in changeset are optional. If the includes key is not specified, its value will default to '.'. The excludes key defaults to no exclusions.
+You should specify the files to watch in changeset by using the includes and excludes keys. Both keys includes and excludes in changeset are optional. If the includes key is not specified, its value will default to `'.'`. The excludes key defaults to no exclusions.
 
     triggering:
       events:
