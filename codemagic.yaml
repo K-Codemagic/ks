@@ -10,14 +10,15 @@ workflows:
       cache_paths:
         - $FLUTTER_ROOT/.pub-cache
     triggering:
-    events:
+      events:
         - push
     when:
       changeset:
         includes:
-          - '.'
+          - 'lib/'
         excludes:
-          - '**/*.yaml'
+          - 'codemagic.yaml'
+    triggering:
       events:
         - pull_request
         - tag
@@ -34,7 +35,7 @@ workflows:
       tag_patterns:
         - pattern: 'v1.0*'
           include: true
-      cancel_previous_builds: false
+      cancel_previous_builds: true
     scripts:
       - |
         # set up local properties
