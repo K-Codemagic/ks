@@ -15,7 +15,7 @@ workflows:
     when:
       changeset:
         includes:
-          - 'lib/*'
+          - '.'
     triggering:
       events:
         - pull_request
