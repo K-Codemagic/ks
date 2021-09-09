@@ -2,9 +2,9 @@
 
 A Build trigger automatically starts a build whenever you make any changes to your source code. You can configure the trigger to build your code on any changes to the source repository or only changes that match certain criteria.
 
-Triggering Via Workflow Editor: https://docs.codemagic.io/flutter-configuration/automatic-build-triggering/
-Triggering via codemagic.yaml: https://docs.codemagic.io/yaml/yaml-getting-started/#triggering
-Setting up Webhook: https://docs.codemagic.io/flutter-configuration/webhooks/
+- Triggering Via Workflow Editor: https://docs.codemagic.io/flutter-configuration/automatic-build-triggering/
+- Triggering via codemagic.yaml: https://docs.codemagic.io/yaml/yaml-getting-started/#triggering
+- Setting up Webhook: https://docs.codemagic.io/flutter-configuration/webhooks/
 
 ### Some useful terms to understand Triggering:
 
