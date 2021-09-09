@@ -1,4 +1,4 @@
-Triggers using codemagic.yaml:
+##Build Triggers using codemagic.yaml:
 
 A Build trigger automatically starts a build whenever you make any changes to your source code. You can configure the trigger to build your code on any changes to the source repository or only changes that match certain criteria.
 
@@ -6,7 +6,7 @@ Triggering Via Workflow Editor: https://docs.codemagic.io/flutter-configuration/
 Triggering via codemagic.yaml: https://docs.codemagic.io/yaml/yaml-getting-started/#triggering
 Setting up Webhook: https://docs.codemagic.io/flutter-configuration/webhooks/
 
-Some useful terms to understand Triggering:
+####Some useful terms to understand Triggering:
 
 Event: Select the repository event to invoke your trigger.
 
@@ -34,13 +34,13 @@ Some Examples for Building Triggers:
         - pattern: '*'
           include: true
  
-Conditional build triggers:
+####Conditional build triggers:
 
 You can avoid unnecessary builds when functional components of your repository were not modified. Use conditional workflow triggering to skip building the workflow if the watched files were not updated since the last successful build.
 
 You should specify the files to watch in changeset by using the includes and excludes keys.
 
-triggering:
+    triggering:
       events:
         - push
     when:
