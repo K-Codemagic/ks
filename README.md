@@ -24,14 +24,14 @@ A Build trigger automatically starts a build whenever you make any changes to yo
         - pull_request
         - tag
       branch_patterns:
-        - pattern: 'develop*'              #pattern
+        - pattern: 'develop*'              #Branch name Pattern 'v1.0*'
           include: true                    #include is for including or excluding the pattern
           source: true                     #source true/false is for pull request triggers to understand if pattern is for source or target branch
         - pattern: 'feature*'
           include: false
           source: true
       tag_patterns:
-        - pattern: '*'
+        - pattern: '*'                    #Tag Pattern (Another Example: 
           include: true
       cancel_previous_builds: false       #Set to `true` to automatically cancel outdated webhook builds
  
