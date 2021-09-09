@@ -10,8 +10,15 @@ workflows:
       cache_paths:
         - $FLUTTER_ROOT/.pub-cache
     triggering:
-      events:
+    events:
         - push
+    when:
+      changeset:
+        includes:
+          - '.'
+        excludes:
+          - '**/*.yaml'
+      events:
         - pull_request
         - tag
       branch_patterns:
