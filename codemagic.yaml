@@ -16,8 +16,6 @@ workflows:
       changeset:
         includes:
           - 'lib/'
-        excludes:
-          - 'codemagic.yaml'
     triggering:
       events:
         - pull_request
