@@ -16,7 +16,6 @@ workflows:
       changeset:
         includes:
           - '.'
-      cancel_previous_builds: true
     scripts:
       - |
         # set up local properties
