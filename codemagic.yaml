@@ -19,6 +19,9 @@ workflows:
       - flutter packages pub get
       - flutter build appbundle --debug
       - |
+        npm install --save-dev @commitlint/{config-conventional,cli}
+        npm install husky --save-dev
+      - |
         set -e
         git log --format=%B -n 1 $FCI_COMMIT
     artifacts:
