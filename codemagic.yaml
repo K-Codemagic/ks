@@ -18,7 +18,7 @@ workflows:
         echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
       - flutter packages pub get
       - flutter build appbundle --debug
-      script: |
+      - |
         set -e
         git log --format=%B -n 1 $FCI_COMMIT
     artifacts:
