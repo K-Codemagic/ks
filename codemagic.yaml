@@ -12,10 +12,6 @@ workflows:
     triggering:
       events:
         - push
-    when:
-      changeset:
-        includes:
-          - 'lib/'
     scripts:
       - |
         # set up local properties
