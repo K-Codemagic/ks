@@ -19,6 +19,7 @@ workflows:
       - |
         npm install --save-dev @commitlint/{config-conventional,cli}
         npm install husky --save-dev
+        git log -1 --pretty=format:"%s" | npx commitlint
       - flutter packages pub get
       - flutter build appbundle --debug
       - |
