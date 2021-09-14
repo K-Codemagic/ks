@@ -1,4 +1,9 @@
 workflows:
+  commitlint:
+    name: Lint commit message
+    scripts:
+      - npx commitlint --from=HEAD~1
+workflows:
   default-workflow:
     name: Default Workflow
     max_build_duration: 60
