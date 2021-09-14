@@ -2,4 +2,6 @@ workflows:
   commitlint:
     name: Lint commit message
     scripts:
+      - npm install --save-dev @commitlint/{config-conventional,cli}
+      - npm install husky --save-dev
       - npx commitlint --from=HEAD~1
