@@ -13,11 +13,11 @@ workflows:
       events:
         - push
         - tag
-    branch_patterns:
+      branch_patterns:
       - pattern: '*'
         include: true
         source: true
-    tag_patterns:
+      tag_patterns:
       - pattern: '*'
         include: true
     scripts:
