@@ -5,7 +5,6 @@ workflows:
     environment:
       flutter: stable
       xcode: latest
-      cocoapods: default
     cache:
       cache_paths:
         - $FLUTTER_ROOT/.pub-cache
