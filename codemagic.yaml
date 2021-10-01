@@ -12,9 +12,14 @@ workflows:
     triggering:
       events:
         - push
-      branch_patterns:
-        - pattern: *
-          include: true
+        - tag
+    branch_patterns:
+      - pattern: '*'
+        include: true
+        source: true
+    tag_patterns:
+      - pattern: '*'
+        include: true
     scripts:
       - |
         # set up local properties
