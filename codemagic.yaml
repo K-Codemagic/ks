@@ -12,6 +12,7 @@ workflows:
       events:
         - pull_request
       branch_patterns:
+      - pattern: 'dev*'
       - pattern: 't/*'
         include: true
         source: true
