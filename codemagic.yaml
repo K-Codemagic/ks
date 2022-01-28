@@ -13,7 +13,7 @@ workflows:
         - pull_request
       branch_patterns:
       - pattern: 'dev*'
-      - pattern: 't/*'
+      - pattern: 's/*'
         include: true
         source: true
       tag_patterns:
