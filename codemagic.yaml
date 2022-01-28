@@ -10,10 +10,9 @@ workflows:
         - $FLUTTER_ROOT/.pub-cache
     triggering:
       events:
-        - push
-        - tag
+        - pull_request
       branch_patterns:
-      - pattern: '*'
+      - pattern: 't/*'
         include: true
         source: true
       tag_patterns:
@@ -23,14 +22,8 @@ workflows:
       - |
         # set up local properties
         echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
-      - |
-        npm install --save-dev @commitlint/{config-conventional,cli}
-        npm install husky --save-dev
       - flutter packages pub get
       - flutter build appbundle --debug
-      - |
-        set -e
-        git log --format=%B -n 1 $FCI_COMMIT
     artifacts:
       - build/**/outputs/bundle/**/*.aab
       - build/**/outputs/**/mapping.txt
