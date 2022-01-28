@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "pre-commit": "npm test"
+  }
+}
+{
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+}
+{
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  }
+}
