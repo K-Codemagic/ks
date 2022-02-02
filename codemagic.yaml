@@ -19,8 +19,6 @@ workflows:
       changeset:
         includes:
           - 'codemagic.yaml'
-        excludes:
-          - '*'
     scripts:
       - |
         # set up local properties
