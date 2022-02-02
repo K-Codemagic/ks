@@ -16,7 +16,7 @@ A Build trigger automatically starts a build whenever you make any changes to yo
 
 **Pull request**: Set your trigger to start a build on commits to a pull request. You have to specify whether the watched branch is the source or the target of the pull request.
 
-#### Some Examples for Building Triggers:
+#### Some Examples for Building Triggers
 
     triggering:
       events:
@@ -35,7 +35,7 @@ A Build trigger automatically starts a build whenever you make any changes to yo
           include: true
       cancel_previous_builds: false       #Set to `true` to automatically cancel outdated webhook builds
  
-### Conditional build triggers:
+### Conditional build triggers
 
 You can avoid unnecessary builds when functional components of your repository were not modified. Use conditional workflow triggering to skip building the workflow if the watched files were not updated since the last successful build.
 
@@ -59,7 +59,7 @@ In some cases, you may want to make a change to your source code but you don't w
 
 In such scenarios, you can include `[skip ci]` or `[ci skip]` in the commit message, and a build will not be invoked.
 
-### Possible Issues & Workaround:
+### Possible Issues & Workaround
 
 1. For Running Only Tests: You can create a seperate workflow and configure Triggering settings accordingly.
 ```
