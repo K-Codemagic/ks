@@ -37,5 +37,5 @@ workflows:
          failure: false # To not receive a notification when a build fails  
       email:
         recipients:
-          - kalgi@nevercode.io
+          - kalgishah03@gmail.com
 
