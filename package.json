@@ -22,6 +22,8 @@
   }
   "dependencies": {
     "type": "git",
-    "url": "https://github.com/mrmilu/VideoCompress.git"
+    "url": "https://github.com/mrmilu/plugins.git",
+    "ref":"video_player_black_video",
+    "path": "./packages/video_player/viedo_player"
 }
 }
