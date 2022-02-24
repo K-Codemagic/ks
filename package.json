@@ -20,10 +20,4 @@
     "@commitlint/travis-cli": "^8.2.0",
     "husky": "^3.0.9"
   }
-  "dependencies": {
-    "type": "git",
-    "url": "https://github.com/mrmilu/plugins.git",
-    "ref":"video_player_black_video",
-    "path": "./packages/video_player/viedo_player"
-}
 }
